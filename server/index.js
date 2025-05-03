@@ -10,7 +10,14 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+const corsOptions = {
+    // origin: 'http://localhost:3000', // React frontend
+    // origin:'https://blog3-inky.vercel.app',
+    origin:'https://project-zeta-rouge.vercel.app/',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  };
+  
+  app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
