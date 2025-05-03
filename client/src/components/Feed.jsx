@@ -22,10 +22,18 @@ export default function Feed() {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get(`${import.meta.env.VITE_API_URL}/feeds/reddit`);
-      setPosts(res.data);
+      const res = await axios.get('https://www.reddit.com/r/all.json');
+      const posts = res.data.data.children.map((item) => ({
+        title: item.data.title,
+        url: item.data.url,
+        subreddit: item.data.subreddit,
+        author: item.data.author,
+        score: item.data.score,
+        thumbnail: item.data.thumbnail,
+      }));
+      setPosts(posts);
     } catch (err) {
-      console.error('Failed to fetch posts');
+      console.error('Failed to fetch posts', err);
     }
   };
 
