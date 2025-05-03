@@ -3,7 +3,12 @@ import User from '../models/User.js';
 
 export const getRedditPosts = async (req, res) => {
   try {
-    const response = await axios.get('https://www.reddit.com/r/all.json');
+    const response = await axios.get('https://www.reddit.com/r/all.json', {
+      headers: {
+        'User-Agent': 'Mozilla/5.0'
+      }
+    });
+    
     const posts = response.data.data.children.map((item) => ({
       title: item.data.title,
       url: item.data.url,
