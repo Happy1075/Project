@@ -13,7 +13,7 @@ const app = express();
 const corsOptions = {
     // origin: 'http://localhost:3000', // React frontend
     // origin:'https://blog3-inky.vercel.app',
-    origin:'https://project-zeta-rouge.vercel.app',
+    origin: ['https://project-zeta-rouge.vercel.app', 'https://project-zeta-rouge.vercel.app/'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   };
   
