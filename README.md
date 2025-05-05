@@ -1,49 +1,40 @@
-Creator Dashboard
-
-A full-stack web application where creators can:
-
-->Browse and save Reddit posts
-
-->Manage their profile and credits
-
-->Admin can view all users and manage platform data
-
-Built with React.js, Material-UI, Node.js, Express.js, and MongoDB.
+Creator Dashboard: A full-stack web application where creators can:
 
 Tech Stack
 
-Frontend: React.js, Material-UI, Tailwind CSS
+-> Frontend: React.js, Material-UI, Tailwind CSS
 
-Backend: Node.js, Express.js
+-> Backend: Node.js, Express.js
 
-Database: MongoDB
+-> Database: MongoDB
 
-API Calls: Axios
+-> API Calls: Axios
 
 Features:
 
-Browse live Reddit posts from r/all
+-> Browse live Reddit posts from r/all
 
-Save favorite posts to your profile
+-> Save favorite posts to your profile
 
-5 credits awarded per saved post
+-> 5 credits awarded per saved post
 
-User Authentication (Register, Login)
+-> User Authentication (Register, Login)
 
-Profile management with credit balance
+-> Profile management with credit balance
 
-Admin dashboard to view all users and their saved posts
+-> Admin dashboard to view all users and their saved posts
 
-Clean, responsive UI with Material-UI and Tailwind CSS
+-> Clean, responsive UI with Material-UI and Tailwind CSS
 
 Instructions to Run Locally
 
-Clone Repository
+-> Clone Repository
 
 git clone https://github.com/Happy1075/Project
+
 cd creator-dashboard
 
-Install Dependencies
+-> Install Dependencies
 
 For server:
 
@@ -55,7 +46,7 @@ For client:
 cd client
 npm install
 
-Create .env files
+-> Create .env files
 
 In server/.env
 
@@ -67,7 +58,7 @@ In client/.env
 
 VITE_API_URL=http://localhost:5000/api
 
-Run the App
+-> Run the App
 
 Start backend
 
