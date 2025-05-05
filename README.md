@@ -1,4 +1,4 @@
-Creator Dashboard: A full-stack web application where creators can:
+Creator Dashboard:A full-stack web application where creators can browse Reddit posts, save their favorites, and manage their profile and credits. Admins can view all users, manage posts, and oversee platform data through a dedicated dashboard.
 
 Tech Stack
 
